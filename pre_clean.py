@@ -18,6 +18,8 @@ if __name__ == '__main__':
         text = fi.read()
         text = text.replace('<h2>', '## ')
         text = text.replace('</h2>', '')
+        text = text.replace('<h3>', '### ')
+        text = text.replace('</h3>', '')
         text = text.replace('<strong>', '<b>')
         text = text.replace('</strong>', '</b>')
         text = text.replace('<p>', '')
